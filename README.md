@@ -12,8 +12,7 @@ can be used to compile libexpat on Windows.
 # Installation #
 
   * git clone [libexpat, tested with v2.2.9](https://github.com/libexpat/libexpat) into a local folder
-  * git clone
-  * [libexpat-x86_x64](https://github.com/sridharb1/libexpat-x86_x64)
+  * git clone [libexpat-x86_x64](https://github.com/sridharb1/libexpat-x86_x64)
   * Copy the contents of the libexpat-x86_x64 folder into the expat
     folder of libexpat. So, if your libexpat has been cloned into
     C:\Projects\libexpat, you should now have a C:\Projects\libexpat\expat\expat.sln file.
