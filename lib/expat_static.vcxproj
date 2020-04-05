@@ -17,14 +17,6 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Template|Win32">
-      <Configuration>Template</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Template|x64">
-      <Configuration>Template</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <SccProjectName />
@@ -33,16 +25,6 @@
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <PlatformToolset>v142</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v142</PlatformToolset>
@@ -69,12 +51,6 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -110,14 +86,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
-    <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
     <OutDir>$(ProjectDir)$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
@@ -199,37 +167,27 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
-    <ClCompile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
-    <ClCompile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-  </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="xmlparse.c" />
-    <ClCompile Include="xmlrole.c" />
-    <ClCompile Include="xmltok.c" />
-    <ClCompile Include="xmltok_impl.c" />
-    <ClCompile Include="xmltok_ns.c" />
+    <ClCompile Include="..\..\expat\lib\xmlparse.c" />
+    <ClCompile Include="..\..\expat\lib\xmlrole.c" />
+    <ClCompile Include="..\..\expat\lib\xmltok.c" />
+    <ClCompile Include="..\..\expat\lib\xmltok_impl.c" />
+    <ClCompile Include="..\..\expat\lib\xmltok_ns.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ascii.h" />
-    <ClInclude Include="asciitab.h" />
-    <ClInclude Include="expat.h" />
-    <ClInclude Include="expat_external.h" />
-    <ClInclude Include="iasciitab.h" />
-    <ClInclude Include="internal.h" />
-    <ClInclude Include="latin1tab.h" />
-    <ClInclude Include="nametab.h" />
-    <ClInclude Include="siphash.h" />
-    <ClInclude Include="utf8tab.h" />
-    <ClInclude Include="xmlrole.h" />
-    <ClInclude Include="xmltok.h" />
-    <ClInclude Include="xmltok_impl.h" />
+    <ClInclude Include="..\..\expat\lib\ascii.h" />
+    <ClInclude Include="..\..\expat\lib\asciitab.h" />
+    <ClInclude Include="..\..\expat\lib\expat.h" />
+    <ClInclude Include="..\..\expat\lib\expat_external.h" />
+    <ClInclude Include="..\..\expat\lib\iasciitab.h" />
+    <ClInclude Include="..\..\expat\lib\internal.h" />
+    <ClInclude Include="..\..\expat\lib\latin1tab.h" />
+    <ClInclude Include="..\..\expat\lib\nametab.h" />
+    <ClInclude Include="..\..\expat\lib\siphash.h" />
+    <ClInclude Include="..\..\expat\lib\utf8tab.h" />
+    <ClInclude Include="..\..\expat\lib\xmlrole.h" />
+    <ClInclude Include="..\..\expat\lib\xmltok.h" />
+    <ClInclude Include="..\..\expat\lib\xmltok_impl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
