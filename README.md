@@ -13,8 +13,8 @@ can be used to compile libexpat on Windows.
 
   * git clone [libexpat, tested with v2.2.9](https://github.com/libexpat/libexpat) into a local folder
   * git clone [libexpat-x86_x64](https://github.com/sridharb1/libexpat-x86_x64)
-  * Create a folder named build and copy the contents of this folder
-    into that.
+  * Copy the build folder downloaded above to the root of the libexpat
+    source tree.
   * Open the solution in Visual Studio (I used Visual Studio 2019
     Community Edition). Select the platform/configuration (like
     x64/Release) and compile.
