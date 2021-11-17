@@ -11,7 +11,7 @@ can be used to compile libexpat on Windows.
 
 # Installation #
 
-  * git clone [libexpat, tested with v2.2.10](https://github.com/libexpat/libexpat) into a local folder
+  * git clone [libexpat, tested with v2.4.1](https://github.com/libexpat/libexpat) into a local folder
   * git clone [libexpat-x86_x64](https://github.com/sridharb1/libexpat-x86_x64)
   * Copy the build folder downloaded above to the root of the libexpat
     source tree.
